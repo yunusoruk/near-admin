@@ -38,17 +38,8 @@ export const StoreModal = () => {
         try {
             setLoading(true)
             const response = await axios.post('api/stores', values)
-            toast.success('Store created!', {
-                style: {
-                    border: '1px solid #574b90',
-                    padding: '16px',
-                    color: '#574b90',
-                },
-                iconTheme: {
-                    primary: '#574b90',
-                    secondary: '#FFFAEE',
-                }
-            })
+
+            window.location.assign(`/${response.data.id}`)
 
 
         } catch (error) {
