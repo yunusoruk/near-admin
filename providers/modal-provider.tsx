@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 
 import { StoreModal } from "@/components/modals/store-modal"
+import AlertModal from '@/components/modals/alert-modal';
 
 export const ModalProvider = () => {
 
@@ -19,6 +20,7 @@ export const ModalProvider = () => {
     return (
         <>
             <StoreModal />
+
         </>
     )
 }

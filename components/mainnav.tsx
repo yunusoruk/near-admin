@@ -77,7 +77,7 @@ export function MainNav({
             >
                 <NavigationMenuList>
                     <NavigationMenuItem>
-                        <NavigationMenuTrigger>Settings</NavigationMenuTrigger>
+                        <NavigationMenuTrigger>Menu</NavigationMenuTrigger>
                         <NavigationMenuContent>
                             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                                 {routes.map((route) => (
