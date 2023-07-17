@@ -32,7 +32,7 @@ const AlertModal: FC<AlertModalProps> = ({
     return (
         <Modal
             title="Are you sure?"
-            description="This action will remove your store permanently."
+            description="This action will remove permanently."
             isOpen={isOpen}
             onClose={onClose}
         >
