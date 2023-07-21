@@ -3,7 +3,7 @@ import BillboardClient from "./components/client"
 import { BillboardColumn } from "./components/columns"
 import { format } from "date-fns"
 
-const CategoriesPage = async (
+const BillboardsPage = async (
     { params }: { params: { storeId: string } }
 ) => {
 
@@ -40,4 +40,4 @@ const CategoriesPage = async (
     )
 }
 
-export default CategoriesPage
+export default BillboardsPage
