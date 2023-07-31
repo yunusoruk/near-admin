@@ -28,7 +28,7 @@ const Navbar: FC<navbarProps> = async ({ }) => {
 
     return (
         <div className='border-b'>
-            <div className="px-4  h-16 items-center flex">
+            <div className="px-4  h-16 items-center flex gap-2">
                 <StoreSwitch items={stores} />
                 <MainNav />
                 <div className="ml-auto space-x-4 flex items-center">

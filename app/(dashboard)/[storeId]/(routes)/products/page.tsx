@@ -44,8 +44,6 @@ const ProductsPage = async (
                     data={formatedProducts}
                 />
 
-
-
             </div>
 
         </div>
