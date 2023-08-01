@@ -131,6 +131,7 @@ export async function GET(
                 where: {
                     id: params.billboardId,
                 }
+                
             })
 
             return NextResponse.json(billboard)
