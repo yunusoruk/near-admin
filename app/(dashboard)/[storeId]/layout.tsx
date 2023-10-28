@@ -1,4 +1,5 @@
 import Navbar from "@/components/navbar"
+import { SiteFooter } from "@/components/site-footer"
 import prismadb from "@/lib/prismadb"
 import { auth } from "@clerk/nextjs"
 import { redirect } from 'next/navigation'
@@ -29,10 +30,15 @@ export default async function DashboardLayout({
     }
 
     return (
-        <>
-            <Navbar />
-            {children}
-        </>
+        <div className="flex min-h-screen flex-col space-y-8">
+            <header className="border-b z-40 bg-background">
+                <Navbar />
+            </header>
+            <main className="flex-1">
+                {children}
+            </main>
+            <SiteFooter className="z-40 bg-background" />
+        </div>
     )
 
 }

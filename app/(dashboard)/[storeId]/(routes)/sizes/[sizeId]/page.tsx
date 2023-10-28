@@ -12,8 +12,8 @@ const SizePage = async ({ params }: { params: { sizeId: string } }) => {
     })
 
     return (
-        <div className="flex-col">
-            <div className="flex-1 space-y-4 p-8 pt-6">
+        <div className="container flex-col">
+            <div className="flex-1 space-y-4">
                 <SizeForm
                     initialData={size}
                 />

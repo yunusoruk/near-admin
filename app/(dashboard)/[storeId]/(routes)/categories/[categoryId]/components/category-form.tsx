@@ -159,7 +159,7 @@ const CategoryForm: FC<CategoryFormProps> = ({
 
                                     <Select disabled={loading} onValueChange={field.onChange} defaultValue={field.value}>
                                         <FormControl>
-                                            <SelectTrigger className="w-[180px]">
+                                            <SelectTrigger className="">
                                                 <SelectValue defaultValue={field.value} placeholder="Select a billboard" />
                                             </SelectTrigger>
                                         </FormControl>

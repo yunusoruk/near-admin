@@ -32,16 +32,14 @@ const ProductPage = async ({ params }: { params: { storeId: string, productId: s
     })
 
     return (
-        <div className="flex-col">
-            <div className="flex-1 space-y-4 p-8 pt-6">
+        <div className="container flex-col">
+            <div className="flex-1 space-y-4">
                 <ProductForm
                     initialData={product}
                     categories={categories}
                     sizes={sizes}
                     colors={colors}
                 />
-
-
             </div>
 
         </div>

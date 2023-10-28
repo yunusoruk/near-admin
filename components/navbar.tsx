@@ -5,6 +5,8 @@ import { MainNav } from '@/components/mainnav';
 import StoreSwitch from './switch-store';
 import { redirect } from 'next/navigation';
 import prismadb from '@/lib/prismadb';
+import Link from 'next/link';
+import { ModeToggle } from './mode-toggle';
 
 
 interface navbarProps { }
@@ -27,12 +29,22 @@ const Navbar: FC<navbarProps> = async ({ }) => {
 
 
     return (
-        <div className='border-b'>
-            <div className="px-4  h-16 items-center flex gap-2">
-                <StoreSwitch items={stores} />
+        <div className='container'>
+            <div className="px-4  h-16 items-center flex gap-4">
+                <Link
+                    href='/'
+                >
+                    <p className="uppercase font-bold text-2xl">
+                        near
+                    </p>
+
+                </Link>
                 <MainNav />
                 <div className="ml-auto space-x-4 flex items-center">
+                    <StoreSwitch items={stores} />
+                    <ModeToggle />
                     <UserButton afterSignOutUrl='/' />
+
                 </div>
             </div>
         </div>

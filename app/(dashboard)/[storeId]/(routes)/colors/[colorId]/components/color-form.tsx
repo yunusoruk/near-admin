@@ -77,10 +77,10 @@ const ColorForm: FC<ColorFormProps> = ({
     const onRemove = async () => {
         try {
             setLoading(true)
-            await axios.delete(`/api/${params.storeId}/colors/${params.sizeId}`)
+            await axios.delete(`/api/${params.storeId}/colors/${params.colorId}`)
             router.refresh()
             router.push(`/${params.storeId}/colors`)
-            toast.success('Size removed')
+            toast.success('Color removed')
         } catch (error) {
             toast.error('Something went wrong, please remove all products.')
         }
