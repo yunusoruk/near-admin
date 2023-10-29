@@ -1,7 +1,6 @@
 "use client"
 
 import { useState, type FC } from 'react';
-import { BillboardColumn } from './columns';
 import { useParams, useRouter } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { PaperPlaneIcon } from '@radix-ui/react-icons';
@@ -10,6 +9,7 @@ import { Copy, Edit, MoreHorizontal, Trash2 } from 'lucide-react';
 import { toast } from 'react-hot-toast';
 import AlertModal from '@/components/modals/alert-modal';
 import axios from 'axios';
+import { BillboardColumn } from '../../billboards/components/columns';
 
 interface CellActionProps {
     data: BillboardColumn
